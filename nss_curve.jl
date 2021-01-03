@@ -15,6 +15,10 @@ end
 
 # ╔═╡ 87fefce0-02c5-11eb-3bc6-ad05fe23cf93
 begin
+	import Pkg
+	Pkg.activate(mktempdir())
+	Pkg.add("Plots")
+	Pkg.add("PlutoUI")
 	using Plots
 	using PlutoUI
 end
@@ -95,7 +99,7 @@ end
 # ╟─3a7f37b0-02c9-11eb-28d5-1d8d43c6f44a
 # ╟─5e857a22-02c9-11eb-2c2b-97f06fbcf1a8
 # ╟─abc28efe-02db-11eb-12a1-e3aa3ea94d5f
-# ╟─87fefce0-02c5-11eb-3bc6-ad05fe23cf93
+# ╠═87fefce0-02c5-11eb-3bc6-ad05fe23cf93
 # ╟─c633a440-02c8-11eb-185a-8b3e594df121
 # ╟─3a9d9420-02d4-11eb-2df5-a12b2a9eecb8
 # ╟─bdab38e0-02c5-11eb-09cf-43a08fb6bf8b
